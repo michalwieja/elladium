@@ -1,0 +1,28 @@
+.slick-slider {
+  height: 90vh;
+
+  .slick-track {
+    height: 100%;
+  }
+
+  .slick-list {
+    height: 100%;
+  }
+
+  .img {
+    height: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      transition: all 3000ms ease-in-out;
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+.slick-active {
+  img {
+    transform: scale(1, 1) !important;
+  }
+}
