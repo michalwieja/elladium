@@ -1,0 +1,31 @@
+.section-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__title {
+    font-size: 48px;
+    line-height: 1
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 1
+  }
+
+  &__border {
+    display: block;
+    width: 200px;
+    height: 10px;
+    background-color: $primary;
+    border-radius: 10px;
+
+    &.dark {
+      background-color: #fff;
+    }
+  }
+}

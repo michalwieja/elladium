@@ -6,7 +6,7 @@
     <div class="section-title__subtitle">
       {{ subtitle }}
     </div>
-    <span class="section-title__border" />
+    <span :class="{dark}" class="section-title__border" />
   </div>
 </template>
 
@@ -19,6 +19,10 @@ export default {
     },
     subtitle: {
       type: String
+    },
+    dark: {
+      type: Boolean,
+      default: false
     }
   }
 }
