@@ -24,7 +24,6 @@ export default {
     img: {
       default: null
     }
-
   }
 }
 </script>
