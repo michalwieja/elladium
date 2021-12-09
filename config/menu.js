@@ -5,7 +5,7 @@ export default [
   },
   {
     path: 'offer',
-    name: 'oferta'
+    name: 'Oferta'
   },
   {
     path: 'gallery',

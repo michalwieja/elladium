@@ -4,7 +4,7 @@
       {{ question }}
     </div>
     <transition name="fade">
-      <div v-if="open">
+      <div v-show="open">
         {{ answear }}
       </div>
     </transition>
@@ -45,7 +45,7 @@ export default {
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
-  max-height: initial;
+  max-height: 100px;
 
 }
 
