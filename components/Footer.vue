@@ -1,9 +1,11 @@
 <template>
-  <footer class="footer">
-    copyright
-    <mw-logo />
-    {{ year }}
-  </footer>
+  <div class="container">
+    <footer class="footer">
+      copyright
+      <mw-logo />
+      {{ year }}
+    </footer>
+  </div>
 </template>
 
 <script>

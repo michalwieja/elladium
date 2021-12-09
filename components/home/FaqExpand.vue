@@ -1,11 +1,11 @@
 <template>
   <div class="faq-row">
     <div @click="handleOpen">
-      question
+      {{ question }}
     </div>
     <transition name="fade">
       <div v-if="open">
-        answear
+        {{ answear }}
       </div>
     </transition>
   </div>
@@ -14,6 +14,14 @@
 <script>
 export default {
   name: 'FaqExpand',
+  props: {
+    question: {
+      type: String
+    },
+    answear: {
+      type: String
+    }
+  },
   data () {
     return {
       open: false
@@ -32,6 +40,7 @@ export default {
   border-left: 3px solid #3a3a3a;
   padding-left: 25px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .fade-enter-active, .fade-leave-active {
