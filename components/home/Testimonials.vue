@@ -66,20 +66,20 @@ export default {
     return {
       testimonials,
       settings: {
+        autoplay: true,
         dots: false,
-        focusOnSelect: true,
+        // focusOnSelect: true,
         infinite: true,
-        speed: 500,
+        speed: 2000,
         slidesToShow: 3,
         slidesToScroll: 1,
-        touchThreshold: 1,
+        // touchThreshold: 1,
         responsive: [
           {
             breakpoint: 900,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
+              slidesToScroll: 2
             }
           },
           {

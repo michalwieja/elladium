@@ -74,7 +74,7 @@ export default {
 
       heroSlides,
       settings: {
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         fade: true,
         dots: true,
