@@ -1,20 +1,20 @@
 <template>
   <VueSlickCarousel v-bind="settings">
-    <div v-for="img in heroImg" :key="img.path" class="hero">
+    <div v-for="slide in heroSlides" :key="slide.path" class="hero">
       <div class="container">
         <div class="hero__text">
           <div class="hero__title">
-            uczucia
+            {{ slide.title }}
           </div>
           <div class="hero__subtitle">
-            znowu to poczujesz
+            {{ slide.subtitle }}
           </div>
           <button class="primary-button">
             zobacz moje prace
           </button>
         </div>
       </div>
-      <img :alt="img.path" :src="img.path" class="hero__img">
+      <img :alt="slide.path" :src="slide.path" class="hero__img">
     </div>
   </VueSlickCarousel>
 </template>
@@ -24,22 +24,55 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
-import hero1 from '@/assets/img/hero2.jpg'
-import hero2 from '@/assets/img/hero1.jpg'
-import hero3 from '@/assets/img/hero3.jpg'
+import codziennosc from '../../assets/img/hero/codziennosc.jpg'
+import naturalnie from '../../assets/img/hero/naturalnie.jpg'
+import gesty from '../../assets/img/hero/gesty.jpg'
+import zycie from '../../assets/img/hero/zycie.jpg'
+import bliskosc from '../../assets/img/hero/bliskosc.jpg'
+import piekno from '../../assets/img/hero/piekno.jpg'
+import chwile from '../../assets/img/hero/chwile.jpg'
 
-const heroImg = [
-  { path: hero1 }, { path: hero2 }, { path: hero3 }
+const heroSlides = [
+  {
+    path: codziennosc,
+    title: 'Codzienność',
+    subtitle: 'Najpiękniej pokazana'
+  },
+  {
+    path: naturalnie,
+    title: 'Naturalnie',
+    subtitle: 'najlepiej'
+  }, {
+    path: gesty,
+    title: 'Gesty',
+    subtitle: 'Znaczą tak wiele...'
+  }, {
+    path: zycie,
+    title: 'Celebrowanie życia',
+    subtitle: ''
+  }, {
+    path: bliskosc,
+    title: 'Liczy się Wasza bliskość',
+    subtitle: ''
+  }, {
+    path: piekno,
+    title: 'Piękno',
+    subtitle: 'Twojej historii'
+  }, {
+    path: chwile,
+    title: 'Beztroskie chwile',
+    subtitle: 'do których lubicie wracać'
+  }
 ]
 
 export default {
   name: 'Hero',
   data () {
     return {
-      hero1,
-      hero2,
-      hero3,
-      heroImg,
+      codziennosc,
+      naturalnie,
+
+      heroSlides,
       settings: {
         autoplay: false,
         autoplaySpeed: 4000,
