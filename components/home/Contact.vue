@@ -3,7 +3,7 @@
     <div class="container">
       <SectionTitle dark subtitle="tu nas znajdziesz" title="kontakt" />
       <div class="content">
-        <div>
+        <div class="contact__col">
           <div class="contact__title">
             Rezerwacje terminów
           </div>
@@ -29,7 +29,7 @@
             </button>
           </div>
         </div>
-        <div>
+        <div class="contact__col">
           <div class="contact__title">
             Gdzie nas znajdziecie?
           </div>
@@ -43,7 +43,7 @@
             <p>40-748 Katowice</p>
           </div>
         </div>
-        <div>
+        <div class="desktop-only contact__col">
           <div class="contact__title">
             Menu
           </div>
@@ -51,7 +51,7 @@
             {{ menu.name }}
           </div>
         </div>
-        <div>
+        <div class="contact__col">
           <div class="contact__title">
             Socials
           </div>

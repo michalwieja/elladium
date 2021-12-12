@@ -2,3 +2,11 @@
   width: calc(min(1320px, 90%));
   margin: 0 auto;
 }
+
+.desktop-only {
+  display: block;
+  @media (max-width: $break-900) {
+    display: none;
+  }
+
+}
