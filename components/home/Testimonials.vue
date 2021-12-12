@@ -12,9 +12,6 @@
           :name="card.name"
           :quote="card.quote"
         />
-        <div><h3>1</h3></div>
-        <div><h3>2</h3></div>
-        <div><h3>3</h3></div>
       </VueSlickCarousel>
     </div>
   </div>
@@ -29,6 +26,22 @@ import avatar2
 import avatar3 from '@/assets/img/Unsplash-Avatars_0004s_0027_caleb-george-FSsDeev6Ico-unsplash.png'
 
 const testimonials = [
+  {
+    img: avatar1,
+    quote: 'tetur adipisicing elit. Amet dolore eaque eos itaque labore laborum neque odio quam sed suscipit, temporibu',
+    name: 'mike',
+    company: 'mw.pl'
+  }, {
+    img: avatar2,
+    quote: 'e odio porro qui quia quos reprehenderit similique sint, temporibus tenetur',
+    name: 'edi',
+    company: 'giligili.pl'
+  }, {
+    img: avatar3,
+    quote: 'adipisicing elit. Amet dolore eaque eos itaque labore laborum neque odio quam sed',
+    name: 'megi',
+    company: 'warsztat.edu.pl'
+  },
   {
     img: avatar1,
     quote: 'tetur adipisicing elit. Amet dolore eaque eos itaque labore laborum neque odio quam sed suscipit, temporibu',
@@ -59,7 +72,24 @@ export default {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        touchThreshold: 1
+        touchThreshold: 1,
+        responsive: [
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       }
     }
   }

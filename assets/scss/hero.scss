@@ -1,5 +1,5 @@
 .hero {
-  height: 100%;
+  height: 90vh;
 
   &__img {
     height: 100%;
@@ -15,19 +15,24 @@
     color: white;
     top: 50%;
     transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $fz16
   }
 
   &__title {
-    font-size: 5vw;
-    line-height: 5vw;
+    font-size: $fz100;
+    line-height: 1;
     font-family: Serif;
     color: white;
   }
 
   &__subtitle {
-    font-size: 1.6vw;
+    font-size: $fz30;
     letter-spacing: 5px;
     color: white;
+    line-height: 1;
   }
 }
 
@@ -42,8 +47,12 @@ ul.slick-dots {
   }
 
   li {
-    width: 5vw;
+    width: clamp(50px, 5vw, 100px);
     height: 20px;
+
+    @media (max-width: $break-900) {
+      height: 10px;
+    }
 
     button::before {
       color: white;
@@ -55,14 +64,16 @@ ul.slick-dots {
   }
 }
 
-.slick-slider, .slick-track, .slick-list {
-  max-height: 90vh;
-
-}
-
 .slick-active {
   img {
     transform: scale(1, 1) !important;
   }
 }
 
+@media (max-width: $break-900) {
+  .hero {
+    &__text {
+      top: 70%;
+    }
+  }
+}
