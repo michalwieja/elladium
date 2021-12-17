@@ -38,23 +38,23 @@ const faqList = [
     question: 'JAK PRZYGOTOWAĆ MIESZKANIE DO NOWORODKOWEJ SESJI DOMOWEJ?',
     answear: 'Wszystkie onformacje dostaniecie na maila.'
   }, {
-    id: 5,
+    id: 6,
     question: 'CZY ORGANIZUJESZ SESJE STYLIZOWANE I MINI SESJE?',
     answear: 'Tak, organizuję sezonowe Mini Sesje (Boże Narodzenie, Wielkanoc, Jesienne)\n' +
       'Jeśli marzy Ci się stylizowana sesja z okazji urodzin dzieciaczka, to oczywiście taką przygotuję:)'
   },
   {
-    id: 5,
+    id: 7,
     question: 'JAKIM APARATEM FOTOGRAFUJESZ?',
     answear: 'Pracuję na sprzęcie firmy Canon'
   },
   {
-    id: 5,
+    id: 8,
     question: 'JAK DŁUGO CZEKA SIĘ NA ZDJĘCIA?',
     answear: 'Zdjęcia w galerii On-line dostaniecie ode mnie w przeciągu dwóch tygodni od wykonania sesji.'
   },
   {
-    id: 5,
+    id: 9,
     question: 'CZY POSIADASZ STUDIO?',
     answear: 'Tak, mam małe domowe studio. Jest odpowienie na sesję dziecięce i portrtowe.'
   }

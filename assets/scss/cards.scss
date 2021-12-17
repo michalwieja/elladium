@@ -1,0 +1,38 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+  border-radius: 10px;
+  padding: calc(max(30px, 3vw));
+
+  background: rgb(209, 164, 172);
+  background: -moz-linear-gradient(133deg, rgba(209, 164, 172, 0.15) 0%, rgba(0, 87, 255, 0) 100%);
+  background: -webkit-linear-gradient(133deg, rgba(209, 164, 172, 0.15) 0%, rgba(0, 87, 255, 0) 100%);
+  background: linear-gradient(133deg, rgba(209, 164, 172, 0.15) 0%, rgba(0, 87, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d1a4ac", endColorstr="#0057ff", GradientType=1);
+  @media (max-width: $break-1200) {
+    width: 100%;
+    flex: unset;
+  }
+
+  .img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50%;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      aspect-ratio: 1;
+    }
+  }
+}

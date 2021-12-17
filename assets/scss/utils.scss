@@ -9,3 +9,13 @@
     display: none;
   }
 }
+
+.font-primary {
+  color: $primary;
+}
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: $primary;
+
+}

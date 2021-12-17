@@ -1,0 +1,20 @@
+.main-offer {
+  .cards {
+    .title {
+      font-weight: bold;
+      color: $primary;
+      font-size: $fz18;
+    }
+
+    .count {
+      font-weight: bold;
+      font-size: $fz16
+    }
+  }
+}
+
+.album-offer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
