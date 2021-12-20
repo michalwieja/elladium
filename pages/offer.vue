@@ -4,7 +4,6 @@
     <AlbumsOffer />
     <WeddingsOffer />
     <OccasionalOffer />
-
     <CompanyOffer />
   </div>
 </template>
