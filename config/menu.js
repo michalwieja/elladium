@@ -4,16 +4,16 @@ export default [
     name: 'O mnie'
   },
   {
-    path: 'offer',
+    path: '/offer',
     name: 'Oferta'
   },
   {
-    path: 'gallery',
+    path: '/gallery',
     name: 'Galeria'
   },
 
   {
-    path: 'contact',
+    path: '/contact',
     name: 'Kontakt'
   }
 ]

@@ -19,6 +19,20 @@
     width: 40%;
     padding-left: 25px;
     margin-left: auto;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/white_flo.png');
+      background-size: cover;
+      z-index: -1;
+
+    }
   }
 }
 
