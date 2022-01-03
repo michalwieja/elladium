@@ -4,26 +4,29 @@
       <SectionTitle subtitle="zobacz przykładowe sesje" title="galeria" />
       <div class="gallery__grid">
         <div
-          v-for="card in galleriesInfo"
-          :key="card.title"
+          v-for="gallery in galleries"
+          :key="gallery.id"
           class="gallery__card"
         >
-          <NuxtLink :to="`/gallery/${card.id}`">
+          <NuxtLink :to="`/gallery/${gallery.id}`">
             <div class="img">
-              <img :alt="card.title" :src="card.path">
+              <img
+                :alt="gallery.title"
+                :src="`/gallery/${gallery.id}/${gallery.cover}`"
+              >
               <div class="more">
                 zobacz wiecej
               </div>
             </div>
             <div class="text">
               <div class="title font-primary">
-                {{ card.title }}
+                {{ gallery.title }}
               </div>
               <div class="date">
-                {{ card.date }}
+                {{ gallery.date }}
               </div>
               <div class="type">
-                {{ card.type }}
+                {{ gallery.type }}
               </div>
             </div>
           </NuxtLink>
@@ -34,14 +37,14 @@
 </template>
 
 <script>
-import { galleriesInfo } from '../../config/galleryConfig.js'
+import galleries from '../../galleryConfig.json'
 import SectionTitle from '../../components/home/SectionTitle.vue'
 
 export default {
   components: { SectionTitle },
   data () {
     return {
-      galleriesInfo
+      galleries
     }
   }
 }

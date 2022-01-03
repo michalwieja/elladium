@@ -1,15 +1,28 @@
 <template>
   <div class="gallery">
     <div class="container">
-      <SectionTitle subtitle="zobacz przykładowe sesje" title="galeria" />
-      <div v-if="singleGallery && singleGallery.id">
-        <div>{{ singleGallery.title }}</div>
-        <div class="gallery__grid">
-          <div v-for="file in singleGallery.files" :key="file" class="gallery__card">
-            <div class="img">
-              <img :src="`/gallery/${singleGallery.id}/${file}`" alt="">
-            </div>
-          </div>
+      <SectionTitle :subtitle="singleGallery.type" :title="singleGallery.title" />
+      <div v-if="singleGallery && singleGallery.id" class="column-wrapper">
+        <div class="column">
+          <img
+            v-for="element in getPartOfGallery(1)"
+            :key="element"
+            :src="`/gallery/${singleGallery.id}/${element}`"
+          >
+        </div>
+        <div class="column">
+          <img
+            v-for="element in getPartOfGallery(2)"
+            :key="element"
+            :src="`/gallery/${singleGallery.id}/${element}`"
+          >
+        </div>
+        <div class="column">
+          <img
+            v-for="element in getPartOfGallery(3)"
+            :key="element"
+            :src="`/gallery/${singleGallery.id}/${element}`"
+          >
         </div>
       </div>
     </div>
@@ -27,9 +40,14 @@ export default {
   computed: {
     singleGallery () {
       return galleries.find(gallery => gallery.id === this.$route.params.id)
-    },
-    path () {
-      return require(`~/assets/${this.singleGallery().id}/${this.singleGallery().files[0]}}`)
+    }
+  },
+  methods: {
+    getPartOfGallery (part = 1) {
+      return this.singleGallery?.files.filter((el, index) => {
+        console.log((index + part) % 3)
+        return (index + part) % 3 === 0
+      })
     }
   }
 }

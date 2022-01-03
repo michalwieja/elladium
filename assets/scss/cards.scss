@@ -28,11 +28,13 @@
     border-radius: 50%;
     overflow: hidden;
     width: 50%;
+    aspect-ratio: 1;
 
     img {
       object-fit: cover;
       object-position: center;
       aspect-ratio: 1;
+      width: 100%;
     }
   }
 }

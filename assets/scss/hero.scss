@@ -1,5 +1,15 @@
 .hero {
   height: 90vh;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, .7), transparent);
+
+    z-index: 2;
+  }
 
   &__img {
     height: 100%;
@@ -47,11 +57,11 @@ ul.slick-dots {
   }
 
   li {
-    width: clamp(50px, 5vw, 100px);
+    width: clamp(40px, 5vw, 100px);
     height: 20px;
 
     @media (max-width: $break-900) {
-      height: 10px;
+      height: 7px;
     }
 
     button::before {
@@ -60,6 +70,7 @@ ul.slick-dots {
       height: 100%;
       background-color: white;
       border-radius: 10px;
+      font-size: 0;
     }
   }
 }
