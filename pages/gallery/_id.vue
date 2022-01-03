@@ -2,10 +2,15 @@
   <div class="gallery">
     <div class="container">
       <SectionTitle subtitle="zobacz przykładowe sesje" title="galeria" />
-      info: {{ singleGalleryInfo }}
-      <div v-for="img in singleGalleryFiles.files" :key="img.id">
-        {{ `~/assets/${$route.params.id}/${img}` }}
-        <!--        <img :src="require(`~/assets/${$route.params.id}/${img}`)" alt="">-->
+      <div v-if="singleGallery && singleGallery.id">
+        <div>{{ singleGallery.title }}</div>
+        <div class="gallery__grid">
+          <div v-for="file in singleGallery.files" :key="file" class="gallery__card">
+            <div class="img">
+              <img :src="`/gallery/${singleGallery.id}/${file}`" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -14,16 +19,17 @@
 <script>
 import SectionTitle from '../../components/home/SectionTitle.vue'
 import galleries from '../../galleryConfig.json'
-import { galleriesInfo } from '../../config/galleryConfig.js'
 
 export default {
-  components: { SectionTitle },
+  components: {
+    SectionTitle
+  },
   computed: {
-    singleGalleryFiles () {
-      return galleries.find(el => el.gallery === this.$route.params.id)
+    singleGallery () {
+      return galleries.find(gallery => gallery.id === this.$route.params.id)
     },
-    singleGalleryInfo () {
-      return galleriesInfo.find(el => el.id === this.$route.params.id)
+    path () {
+      return require(`~/assets/${this.singleGallery().id}/${this.singleGallery().files[0]}}`)
     }
   }
 }
