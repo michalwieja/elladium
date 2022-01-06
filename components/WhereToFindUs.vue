@@ -4,10 +4,10 @@
       Gdzie nas znajdziecie?
     </div>
     <div>
-      <p>
+      <div>
         <uil-map-marker />
         Studio mieści się w Katowicach,
-      </p>
+      </div>
       <p>Zarzecze niedaleko Mikołowa</p>
       <p>ul. Kopaniny Lewe 24a</p>
       <p>40-748 Katowice</p>

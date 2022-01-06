@@ -2,6 +2,11 @@
 .contact-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 100px;
+
+  &__map {
+    padding-right: 50px;
+  }
 
   &__data {
     display: flex;

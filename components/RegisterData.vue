@@ -4,10 +4,10 @@
       Elladium Rafał Płaza, Elżbieta Płaza Spółka Cywilna
     </div>
     <div>
-      <p>
+      <div>
         <uil-map-marker />
-      </p>
-      <p>ul. Kopaniny Lewe 24a</p>
+        ul. Kopaniny Lewe 24a
+      </div>
       <p>40-748 Katowice</p>
       <p>NIP: 954-280-50-70</p>
       <small>Numer konta</small>
@@ -17,8 +17,12 @@
 </template>
 
 <script>
+import { UilMapMarker } from '@iconscout/vue-unicons'
 
 export default {
-  name: 'RegisterData'
+  name: 'RegisterData',
+  components: {
+    UilMapMarker
+  }
 }
 </script>
