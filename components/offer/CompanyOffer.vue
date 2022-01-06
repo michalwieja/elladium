@@ -11,14 +11,14 @@
         w internecie? Z przyjemnością poznam Ciebie oraz Twoją firmę lub pomysł na nią! Razem możemy
         stworzyć twój fotograficzny wizerunek.
       </p>
-      <ul>
-        <li>gili gili</li>
-        <li>joganika</li>
-        <li>logopedia reggio (w budowie)</li>
-        <li>sowa ksiegowa</li>
-        <li>cleardent</li>
-        <li>sionki clothes</li>
-      </ul>
+      <div class="company-wrapper">
+        <div>gili gili</div>
+        <div>joganika</div>
+        <div>logopedia reggio (w budowie)</div>
+        <div>sowa ksiegowa</div>
+        <div>cleardent</div>
+        <div>sionki clothes</div>
+      </div>
     </div>
   </div>
 </template>

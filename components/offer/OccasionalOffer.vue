@@ -18,7 +18,7 @@
         <div class="desc">
           <ul>
             <li v-for="(el, index) in card.desc" :key="index">
-              <img :src="dot" alt="" width="15px">
+              <img :src="dot" alt="dot" width="15px">
               {{ el }}
             </li>
           </ul>

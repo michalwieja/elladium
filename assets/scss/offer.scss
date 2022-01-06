@@ -28,3 +28,21 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.company-wrapper {
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-bottom: 50px;
+
+  & > div {
+    background-color: darken($primary, 10%);
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+  }
+}

@@ -19,7 +19,7 @@
         <div class="desc">
           <ul>
             <li v-for="(el, index) in card.desc" :key="index">
-              <uil-camera />
+              <img :src="dot" alt="dot" width="15px">
               {{ el }}
             </li>
           </ul>
@@ -30,11 +30,12 @@
 </template>
 
 <script>
-import { UilCamera } from '@iconscout/vue-unicons'
+
 import SectionTitle from '../home/SectionTitle.vue'
 import flower4 from '../../assets/flower/flower4.svg'
 import flower2 from '../../assets/flower/flower2.svg'
 import flower3 from '../../assets/flower/flower3.svg'
+import dot from '../../assets/flower/flower-dot.svg'
 
 const offerCards = [
   {
@@ -63,12 +64,12 @@ const offerCards = [
 export default {
   name: 'MainOffer',
   components: {
-    SectionTitle,
-    UilCamera
+    SectionTitle
   },
   data () {
     return {
-      offerCards
+      offerCards,
+      dot
     }
   }
 }

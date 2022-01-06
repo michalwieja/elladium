@@ -13,7 +13,9 @@
               {{ link.name }}
             </NuxtLink>
           </li>
+          <SocialIcons />
         </ul>
+
         <div class="burger">
           <div class="burger__line" />
           <div class="burger__line" />
@@ -27,9 +29,11 @@
 <script>
 import logo from '../assets/img/elladium-logo.png'
 import menuLinks from '../config/menu.js'
+import SocialIcons from './SocialIcons.vue'
 
 export default {
   name: 'Header',
+  components: { SocialIcons },
   props: {
     transparent: {
       type: Boolean,

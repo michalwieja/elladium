@@ -16,13 +16,14 @@
 @import "offer";
 @import "gallery";
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: $black;
   line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
