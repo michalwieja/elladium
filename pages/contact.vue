@@ -29,8 +29,8 @@
   </div>
 </template>
 
-<script>import mapComponentConfig from '../config/mapComponentConfig'
-
+<script>
+import mapComponentConfig from '../config/mapComponentConfig'
 import SectionTitle from '../components/home/SectionTitle.vue'
 import Appointments from '../components/Appointments.vue'
 import WhereToFindUs from '../components/WhereToFindUs.vue'
