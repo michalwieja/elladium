@@ -4,8 +4,16 @@
   grid-template-columns: 1fr 1fr;
   padding-bottom: 100px;
 
+  @media (max-width: $break-900) {
+    grid-template-columns: 1fr;
+  }
+
   &__map {
     padding-right: 50px;
+    @media (max-width: $break-900) {
+      padding-right: 0;
+      padding-bottom: 50px;
+    }
   }
 
   &__data {

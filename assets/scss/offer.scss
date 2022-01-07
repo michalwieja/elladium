@@ -35,6 +35,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding-bottom: 50px;
+  @media (max-width: $break-900) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $break-600) {
+    grid-template-columns: 1fr
+  }
 
   & > div {
     background-color: darken($primary, 10%);

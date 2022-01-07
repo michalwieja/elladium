@@ -3,6 +3,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    @media (max-width: $break-900) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $break-600) {
+      grid-template-columns: 1fr
+    }
   }
 
   .more {
@@ -54,7 +61,6 @@
     object-fit: contain;
     position: relative;
 
-
     img {
       height: 100%;
       width: 100%;
@@ -63,7 +69,6 @@
     }
   }
 }
-
 
 .column-wrapper {
   display: grid;
