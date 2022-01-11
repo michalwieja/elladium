@@ -8,6 +8,7 @@
             v-for="element in getPartOfGallery(1)"
             :key="element"
             :src="`/gallery/${singleGallery.id}/${element}`"
+            @click="handleClick(singleGallery.id, element)"
           >
         </div>
         <div class="column">
@@ -43,9 +44,11 @@ export default {
     }
   },
   methods: {
+    handleClick (id, filename) {
+      console.log(id, filename)
+    },
     getPartOfGallery (part = 1) {
       return this.singleGallery?.files.filter((el, index) => {
-        console.log((index + part) % 3)
         return (index + part) % 3 === 0
       })
     }
