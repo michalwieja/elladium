@@ -34,6 +34,13 @@ const galleries = [{
   type: 'Sesja komunijna',
   date: '27-06-2020',
   cover: '8D1A2301.jpg'
+},
+{
+  id: '6',
+  title: 'Domowa sesja noworodkowa - Mysłowice',
+  type: 'Sesja noworodkowa',
+  date: '24-05-2018',
+  cover: '8D1A5679.jpg'
 }]
 const res = galleries.map((gallery) => {
   const p = path.join(process.cwd(), 'static', 'gallery', gallery.id)
