@@ -21,7 +21,19 @@ const galleries = [{
   type: 'Sesja noworodkowa',
   date: '05-12-2021',
   cover: '8D1A5340.jpg'
-
+}, {
+  id: '4',
+  title: 'Naturalna sesja rodzinna - Mikołów',
+  type: 'Sesja naturalna',
+  date: '03-09-2020',
+  cover: '8D1A9623.jpg'
+},
+{
+  id: '5',
+  title: 'Pierwsza Komunia - Dąbrowa Górnicza',
+  type: 'Sesja komunijna',
+  date: '27-06-2020',
+  cover: '8D1A2301.jpg'
 }]
 const res = galleries.map((gallery) => {
   const p = path.join(process.cwd(), 'static', 'gallery', gallery.id)
