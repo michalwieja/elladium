@@ -41,6 +41,13 @@ const galleries = [{
   type: 'Sesja noworodkowa',
   date: '24-05-2018',
   cover: '8D1A5679.jpg'
+},
+{
+  id: '7',
+  title: 'Wieczór Panieński w Beskidzie Żywieckim',
+  type: 'Sesja ślubna',
+  date: '11-09-2021',
+  cover: '8D1A6792.jpg'
 }]
 const res = galleries.map((gallery) => {
   const p = path.join(process.cwd(), 'static', 'gallery', gallery.id)

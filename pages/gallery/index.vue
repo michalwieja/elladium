@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery">
+  <div class="gallery pt-10">
     <div class="container">
       <SectionTitle subtitle="zobacz przykładowe sesje" title="galeria" />
       <div class="gallery__grid">

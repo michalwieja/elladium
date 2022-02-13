@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container pt-10">
     <SectionTitle subtitle="Gdzie nas znaleźć?" title="Kontakt" />
     <div class="contact-page">
       <div class="contact-page__map">
