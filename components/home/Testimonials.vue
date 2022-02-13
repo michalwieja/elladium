@@ -19,44 +19,48 @@
 
 <script>
 import SectionTitle from './SectionTitle.vue'
-import avatar1
-  from '@/assets/img/Unsplash-Avatars_0004s_0005_laurence-cruz-P7yvmajPvkM-unsplash.png'
-import avatar2
-  from '@/assets/img/Unsplash-Avatars_0004s_0007_nathan-dumlao-Ju--S80ezyU-unsplash.png'
-import avatar3 from '@/assets/img/Unsplash-Avatars_0004s_0027_caleb-george-FSsDeev6Ico-unsplash.png'
+import avatar1 from '@/assets/img/testimonial/paulina-malachowska.jpg'
+import avatar2 from '@/assets/img/testimonial/ania-lempart.jpg'
+import avatar3 from '@/assets/img/testimonial/gili.jpg'
 
 const testimonials = [
   {
     img: avatar1,
-    quote: 'tetur adipisicing elit. Amet dolore eaque eos itaque labore laborum neque odio quam sed suscipit, temporibu',
-    name: 'mike',
-    company: 'mw.pl'
+    quote: 'Polecam z całego serca Elę.' +
+      ' Zdjęcia które nam zrobiła są śliczne, prawdziwe i pełne emocji!\n' +
+      ' Mogłabym na nie patrzeć godzinami. Wszyscy jesteśmy na nich tacy piękni... A nasz synek taki malutki. Atmosfera na sesji jest nad wyraz ciepła i luźna.\n' +
+      'Mamy super pamiątkę' +
+      'Na pewno będziemy korzystali z usług Eli',
+    name: 'Paulina Małachowska'
+
   }, {
     img: avatar2,
-    quote: 'e odio porro qui quia quos reprehenderit similique sint, temporibus tenetur',
-    name: 'edi',
-    company: 'giligili.pl'
+    quote: 'Sesja z Elą to niebywała przyjemność. Jej wprawne oko potrafi uchwycić nawet uśmiech noworodka. Miałam przyjemność mieć kilka sesji i każda z nich była bardziej spotkaniem towarzyskim niż pozowaniem w nienaturalnych pozach. Ela potrafi niesamowicie rozluźnić atmosferę sesji jednoczenie nie umyka jej ani sekunda. Polecam każdemu kto szuka naturalnej sesji w cudownym towarzystwie prawdziwej Profesjonalistki.  ',
+    name: 'Ania Lempart'
   }, {
     img: avatar3,
-    quote: 'adipisicing elit. Amet dolore eaque eos itaque labore laborum neque odio quam sed',
-    name: 'megi',
-    company: 'warsztat.edu.pl'
+    quote: 'Szczerze polecam współpracę z Elą. Za Nami wiele spotkań w różnych okolicznościach wszystkie owocne i satysfakcjonujące. Sesje biznesowe, które są dopasowane do potrzeb i genialnie sprawdzają się w promocji firmy i sesje rodzinne, na których czujemy zaopiekowanie o rozluźnieni przez co ujęcia są fantastyczne.  Pasja, serce i talent do fotografii muszą dać świetny efekt i tak właśnie działa Elladium',
+    name: 'Edyta Staszowska',
+    company: 'giligili.pl'
   },
   {
     img: avatar1,
-    quote: 'tetur adipisicing elit. Amet dolore eaque eos itaque labore laborum neque odio quam sed suscipit, temporibu',
-    name: 'mike',
-    company: 'mw.pl'
+    quote: 'Polecam z całego serca Elę.' +
+      ' Zdjęcia które nam zrobiła są śliczne, prawdziwe i pełne emocji!\n' +
+      ' Mogłabym na nie patrzeć godzinami. Wszyscy jesteśmy na nich tacy piękni... A nasz synek taki malutki. Atmosfera na sesji jest nad wyraz ciepła i luźna.\n' +
+      'Mamy super pamiątkę' +
+      'Na pewno będziemy korzystali z usług Eli',
+    name: 'Paulina Małachowska'
+
   }, {
     img: avatar2,
-    quote: 'e odio porro qui quia quos reprehenderit similique sint, temporibus tenetur',
-    name: 'edi',
-    company: 'giligili.pl'
+    quote: 'Sesja z Elą to niebywała przyjemność. Jej wprawne oko potrafi uchwycić nawet uśmiech noworodka. Miałam przyjemność mieć kilka sesji i każda z nich była bardziej spotkaniem towarzyskim niż pozowaniem w nienaturalnych pozach. Ela potrafi niesamowicie rozluźnić atmosferę sesji jednoczenie nie umyka jej ani sekunda. Polecam każdemu kto szuka naturalnej sesji w cudownym towarzystwie prawdziwej Profesjonalistki.  ',
+    name: 'Ania Lempart'
   }, {
     img: avatar3,
-    quote: 'adipisicing elit. Amet dolore eaque eos itaque labore laborum neque odio quam sed',
-    name: 'megi',
-    company: 'warsztat.edu.pl'
+    quote: 'Szczerze polecam współpracę z Elą. Za Nami wiele spotkań w różnych okolicznościach wszystkie owocne i satysfakcjonujące. Sesje biznesowe, które są dopasowane do potrzeb i genialnie sprawdzają się w promocji firmy i sesje rodzinne, na których czujemy zaopiekowanie o rozluźnieni przez co ujęcia są fantastyczne.  Pasja, serce i talent do fotografii muszą dać świetny efekt i tak właśnie działa Elladium',
+    name: 'Edyta Staszowska',
+    company: 'giligili.pl'
   }
 ]
 export default {

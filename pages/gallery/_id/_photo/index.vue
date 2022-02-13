@@ -1,7 +1,7 @@
 <template>
   <div class="photo">
     <div class="close" @click="$router.back()">
-      X
+      <uil-times size="20px" />
     </div>
     <img
       :alt="Photography"
@@ -12,8 +12,11 @@
 </template>
 
 <script>
+import { UilTimes } from '@iconscout/vue-unicons'
+
 export default {
-  name: 'Index'
+  name: 'Index',
+  components: { UilTimes }
 }
 </script>
 
@@ -31,7 +34,6 @@ export default {
   .wrapper {
     width: 100%;
     height: 100%;
-
   }
 
   .img {
@@ -39,15 +41,14 @@ export default {
     height: 100%;
     width: 100%;
   }
-
 }
 
 .close {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #fff;
   display: flex;

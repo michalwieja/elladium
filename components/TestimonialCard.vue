@@ -8,7 +8,7 @@
         "{{ quote }}"
       </div>
       <div class="name">
-        {{ name }}, {{ company }}
+        {{ name }}<span v-if="company">, {{ company }}</span>
       </div>
     </div>
   </div>
