@@ -22,6 +22,11 @@ export default {
     Testimonials,
     About,
     Hero
+  },
+  methods: {
+    handleScroll (e) {
+      console.log(e)
+    }
   }
 }
 </script>

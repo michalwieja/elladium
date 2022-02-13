@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header :class="{'active' : scrollPos > 0}" class="header">
     <div class="container">
       <div class="logo">
         <NuxtLink to="/">
@@ -15,7 +15,6 @@
           </li>
           <SocialIcons />
         </ul>
-
         <div class="burger">
           <div class="burger__line" />
           <div class="burger__line" />
@@ -43,10 +42,18 @@ export default {
   data () {
     return {
       logo,
-      menuLinks
+      menuLinks,
+      scrollPos: 0
     }
   },
+
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+
   mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+
     const burger = document.querySelector('.burger')
     const nav = document.querySelector('.nav__links')
     const links = document.querySelectorAll('.nav__link')
@@ -61,6 +68,12 @@ export default {
         burger.classList.toggle('toggle')
       })
     })
+  },
+  methods: {
+    handleScroll (event) {
+      console.log(event)
+      this.scrollPos = window.scrollY
+    }
   }
 }
 </script>
