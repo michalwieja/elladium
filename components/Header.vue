@@ -70,8 +70,7 @@ export default {
     })
   },
   methods: {
-    handleScroll (event) {
-      console.log(event)
+    handleScroll () {
       this.scrollPos = window.scrollY
     }
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery">
+  <div class="gallery pt-10">
     <div class="container">
       <SectionTitle :subtitle="singleGallery.type" :title="singleGallery.title" />
       <div v-if="singleGallery && singleGallery.id" class="column-wrapper">
@@ -16,6 +16,7 @@
             v-for="element in getPartOfGallery(2)"
             :key="element"
             :src="`/gallery/${singleGallery.id}/${element}`"
+            @click="handleClick(singleGallery.id, element)"
           >
         </div>
         <div class="column">
@@ -23,6 +24,7 @@
             v-for="element in getPartOfGallery(3)"
             :key="element"
             :src="`/gallery/${singleGallery.id}/${element}`"
+            @click="handleClick(singleGallery.id, element)"
           >
         </div>
       </div>
