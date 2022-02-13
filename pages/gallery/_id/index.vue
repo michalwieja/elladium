@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import SectionTitle from '../../components/home/SectionTitle.vue'
-import galleries from '../../galleryConfig.json'
+import SectionTitle from '../../../components/home/SectionTitle.vue'
+import galleries from '../../../galleryConfig.json'
 
 export default {
   components: {
@@ -48,6 +48,7 @@ export default {
   methods: {
     handleClick (id, filename) {
       console.log(id, filename)
+      this.$router.push(`/gallery/${id}/${filename}`)
     },
     getPartOfGallery (part = 1) {
       return this.singleGallery?.files.filter((el, index) => {
