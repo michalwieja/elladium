@@ -9,7 +9,7 @@
           <div class="hero__subtitle">
             {{ slide.subtitle }}
           </div>
-          <NuxtLink to="/offer">
+          <NuxtLink to="/gallery">
             <button class="primary-button">
               zobacz moje prace
             </button>
