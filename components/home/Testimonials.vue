@@ -22,6 +22,7 @@ import SectionTitle from './SectionTitle.vue'
 import avatar1 from '@/assets/img/testimonial/paulina-malachowska.jpg'
 import avatar2 from '@/assets/img/testimonial/ania-lempart.jpg'
 import avatar3 from '@/assets/img/testimonial/gili.jpg'
+import avatar4 from '@/assets/img/testimonial/gosia-milewska.jpg'
 
 const testimonials = [
   {
@@ -44,6 +45,12 @@ const testimonials = [
     company: 'giligili.pl'
   },
   {
+    img: avatar4,
+    quote: 'Pierwsza sesja: ciążowa, magiczna. Później już w roli głównej nasze oczko w głowie, z rodzicami ewentualnie w tle. Mój syn tak polubił sesje u Eli, że nie wiem czy to się nie skończy jakimś tap model. Zdjęcia u Eli kojarzą mu się po prostu ze świetną zabawą. Dla nas to wspaniały dziennik jego dorastania. Polecam i jestem przekonana, że zostaniecie z Elą na lata, tak jak my.',
+    name: 'Gosia Milewska'
+
+  },
+  {
     img: avatar1,
     quote: 'Polecam z całego serca Elę.' +
       ' Zdjęcia które nam zrobiła są śliczne, prawdziwe i pełne emocji!\n' +
@@ -61,6 +68,12 @@ const testimonials = [
     quote: 'Szczerze polecam współpracę z Elą. Za Nami wiele spotkań w różnych okolicznościach wszystkie owocne i satysfakcjonujące. Sesje biznesowe, które są dopasowane do potrzeb i genialnie sprawdzają się w promocji firmy i sesje rodzinne, na których czujemy zaopiekowanie o rozluźnieni przez co ujęcia są fantastyczne.  Pasja, serce i talent do fotografii muszą dać świetny efekt i tak właśnie działa Elladium',
     name: 'Edyta Staszowska',
     company: 'giligili.pl'
+  },
+  {
+    img: avatar4,
+    quote: 'Pierwsza sesja: ciążowa, magiczna. Później już w roli głównej nasze oczko w głowie, z rodzicami ewentualnie w tle. Mój syn tak polubił sesje u Eli, że nie wiem czy to się nie skończy jakimś tap model. Zdjęcia u Eli kojarzą mu się po prostu ze świetną zabawą. Dla nas to wspaniały dziennik jego dorastania. Polecam i jestem przekonana, że zostaniecie z Elą na lata, tak jak my.',
+    name: 'Gosia Milewska'
+
   }
 ]
 export default {
@@ -72,12 +85,10 @@ export default {
       settings: {
         autoplay: true,
         dots: false,
-        // focusOnSelect: true,
         infinite: true,
         speed: 2000,
         slidesToShow: 3,
         slidesToScroll: 1,
-        // touchThreshold: 1,
         responsive: [
           {
             breakpoint: 900,
