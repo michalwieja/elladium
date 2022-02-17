@@ -1,10 +1,12 @@
 <template>
   <div>
-    <Hero />
-    <About />
-    <Testimonials />
-    <Faq />
-    <Contact />
+    <ClientOnly>
+      <Hero />
+      <About />
+      <Testimonials />
+      <Faq />
+      <Contact />
+    </ClientOnly>
   </div>
 </template>
 <script>
