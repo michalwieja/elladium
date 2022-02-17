@@ -1,17 +1,15 @@
 <template>
   <div>
-    <Hero />
+    <!--    <Hero />-->
     <About />
-    <Testimonials />
+    <!--    <Testimonials />-->
     <Faq />
     <Contact />
   </div>
 </template>
 <script>
 
-import Hero from '../components/home/Hero.vue'
 import About from '../components/home/About.vue'
-import Testimonials from '../components/home/Testimonials.vue'
 import Faq from '../components/home/Faq.vue'
 import Contact from '../components/home/ContactSection.vue'
 
@@ -19,9 +17,9 @@ export default {
   components: {
     Contact,
     Faq,
-    Testimonials,
-    About,
-    Hero
+    // Testimonials,
+    About
+    // Hero
   },
   methods: {
     handleScroll (e) {

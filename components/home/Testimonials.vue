@@ -2,7 +2,6 @@
   <div class="container">
     <div class="testimonials">
       <SectionTitle subtitle="sa najwazniejsi" title="opinie moich klientow" />
-
       <VueSlickCarousel v-bind="settings">
         <TestimonialCard
           v-for="card in testimonials"
