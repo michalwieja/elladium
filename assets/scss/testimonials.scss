@@ -11,4 +11,10 @@
     font-size: 18px;
     min-height: 430px;
   }
+
+  .card {
+    .img {
+      aspect-ratio: 1;
+    }
+  }
 }
