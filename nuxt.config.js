@@ -19,12 +19,30 @@ export default {
       },
       {
         hid: 'description',
-        name: 'description',
+        name: 'Cześć, jestem Ela. Uwielbiam naturalną fotografię, psy i książki kucharskie. Najlepiej czuję się na łonie natury i w mojej kuchni.',
         content: ''
       },
       {
         name: 'format-detection',
         content: 'telephone=no'
+      }, {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Elladium Fotografia'
+      }, {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Cześć, jestem Ela. Uwielbiam naturalną fotografię, psy i książki kucharskie. Najlepiej czuję się na łonie natury i w mojej kuchni.'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/elladium1200x630.jpg'
       }
     ],
     link: [
