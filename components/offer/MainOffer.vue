@@ -41,22 +41,22 @@ const offerCards = [
   {
     id: 1,
     flower: flower4,
-    title: 'PAKIET ZDJĘĆ BASIC 400 ZŁ',
-    count: 15,
-    desc: ['Autorska obróbka graficzna', 'Wydruk na papierze Fine Art Print w formacie 15/23 cm', 'Pudełko na zdjęcia', 'Zdjęcia na płycie', 'Galeria On-line', 'Możliwość dokupienia wszystkich pozostałych kadrów na płycie (150 zł)']
+    title: 'PAKIET ZDJĘĆ BASIC 500 ZŁ',
+    count: 50,
+    desc: ['Autorska obróbka graficzna', 'Wydruk 15 kadrów  na papierze Fine Art Print w formacie 15/23 cm', 'Pudełko na zdjęcia', 'Zdjęcia na płycie', 'Galeria On-line', 'Możliwość dokupienia wszystkich pozostałych kadrów na płycie (100 zł)']
   },
   {
     id: 2,
     flower: flower2,
-    title: 'PAKIET ZDJĘĆ PREMIUM 600 ZŁ',
-    count: 35,
-    desc: ['Autorska obróbka graficzna', 'Mini album w formacie 20/20 cm', 'Odbitki na jedwabnym papierze w formacie 15/23 cm.', 'Zdjęcia na płycie', 'Galeria On-line', 'Możliwość dokupienia wszystkich pozostałych kadrów na płycie (100 zł)']
+    title: 'PAKIET ZDJĘĆ PREMIUM 700 ZŁ',
+    count: 50,
+    desc: ['Autorska obróbka graficzna', 'Mini album w formacie 20/20 cm', 'Zdjęcia na płycie', 'Galeria On-line', 'Możliwość dokupienia wszystkich pozostałych kadrów na płycie (100 zł)']
   },
   {
     id: 3,
     flower: flower3,
-    title: 'PAKIET ZDJĘCIOWY DE LUX 1000 ZŁ',
-    count: 60,
+    title: 'PAKIET ZDJĘĆ DELUX 1000 ZŁ',
+    count: 70,
     desc: ['Autorska obróbka graficzna', 'Profesjonalny album w formacie 25/25 cm.', 'Odbitki na jedwabnym papierze w formacie 15/23 cm.', 'Zdjęcia na płycie', 'Galeria On-line', 'Galeria On-line']
   }
 ]
