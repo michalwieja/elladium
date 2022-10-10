@@ -1,13 +1,20 @@
 <template>
   <div class="gallery pt-10">
     <div class="container">
-      <SectionTitle :subtitle="singleGallery.type" :title="singleGallery.title" />
+      <SectionTitle
+        :subtitle="singleGallery.type"
+        :title="singleGallery.title"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+      />
       <div v-if="singleGallery && singleGallery.id" class="column-wrapper">
         <div class="column">
           <img
             v-for="element in getPartOfGallery(1)"
             :key="element"
             :src="`/gallery/${singleGallery.id}/${element}`"
+            data-aos="fade-in"
+            data-aos-duration="1000"
             @click="handleClick(singleGallery.id, element)"
           >
         </div>
@@ -16,6 +23,8 @@
             v-for="element in getPartOfGallery(2)"
             :key="element"
             :src="`/gallery/${singleGallery.id}/${element}`"
+            data-aos="fade-in"
+            data-aos-duration="1000"
             @click="handleClick(singleGallery.id, element)"
           >
         </div>
@@ -24,6 +33,8 @@
             v-for="element in getPartOfGallery(3)"
             :key="element"
             :src="`/gallery/${singleGallery.id}/${element}`"
+            data-aos="fade-in"
+            data-aos-duration="1000"
             @click="handleClick(singleGallery.id, element)"
           >
         </div>

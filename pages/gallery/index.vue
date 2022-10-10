@@ -1,12 +1,19 @@
 <template>
   <div class="gallery pt-10">
     <div class="container">
-      <SectionTitle subtitle="zobacz przykładowe sesje" title="galeria" />
+      <SectionTitle
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        subtitle="zobacz przykładowe sesje"
+        title="galeria"
+      />
       <div class="gallery__grid">
         <div
           v-for="gallery in galleries"
           :key="gallery.id"
           class="gallery__card"
+          data-aos="fade-in"
+          data-aos-duration="1000"
         >
           <NuxtLink :to="`/gallery/${gallery.id}`">
             <div class="img">

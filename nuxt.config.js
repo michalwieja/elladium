@@ -25,7 +25,8 @@ export default {
       {
         name: 'format-detection',
         content: 'telephone=no'
-      }, {
+      },
+      {
         hid: 'og:type',
         property: 'og:type',
         content: 'website'
@@ -80,6 +81,10 @@ export default {
     {
       src: '~/plugins/vue2-google-maps.js',
       ssr: true
+    },
+    {
+      src: '~/plugins/aos',
+      ssr: false
     }
   ],
 
