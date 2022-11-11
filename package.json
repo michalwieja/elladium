@@ -13,8 +13,10 @@
   "dependencies": {
     "@iconscout/vue-unicons": "^0.0.3",
     "aos": "^2.3.4",
-    "core-js": "^3.15.1",
+    "core-js": "^3.25.5",
     "nuxt": "^2.15.7",
+    "nuxt-lazy-load": "^1.2.9",
+    "vue-cool-lightbox": "^2.7.5",
     "vue-slick-carousel": "^1.0.6",
     "vue2-google-maps": "^0.10.7"
   },

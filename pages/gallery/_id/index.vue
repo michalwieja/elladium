@@ -1,41 +1,34 @@
 <template>
   <div class="gallery pt-10">
     <div class="container">
+      <CoolLightBox
+        :effect="'fade'"
+        :full-screen="true"
+        :index="index"
+        :items="parsed || []"
+        :use-zoom-bar="true"
+        slideshow-color-bar="#ffffff"
+        @close="index = null"
+      />
       <SectionTitle
         :subtitle="singleGallery.type"
         :title="singleGallery.title"
         data-aos="fade-in"
         data-aos-duration="1000"
       />
-      <div v-if="singleGallery && singleGallery.id" class="column-wrapper">
-        <div class="column">
+      <div
+        v-if="singleGallery && singleGallery.id"
+        style="column-count: 3"
+      >
+        <div
+          v-for="(element,idx) in singleGallery.files"
+          :key="element"
+          style="margin: 0 1rem 1rem 0; display: block;width: 100%;"
+        >
           <img
-            v-for="element in getPartOfGallery(1)"
-            :key="element"
             :src="`/gallery/${singleGallery.id}/${element}`"
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            @click="handleClick(singleGallery.id, element)"
-          >
-        </div>
-        <div class="column">
-          <img
-            v-for="element in getPartOfGallery(2)"
-            :key="element"
-            :src="`/gallery/${singleGallery.id}/${element}`"
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            @click="handleClick(singleGallery.id, element)"
-          >
-        </div>
-        <div class="column">
-          <img
-            v-for="element in getPartOfGallery(3)"
-            :key="element"
-            :src="`/gallery/${singleGallery.id}/${element}`"
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            @click="handleClick(singleGallery.id, element)"
+            style="width: 100%;  object-fit: cover"
+            @click="index=idx"
           >
         </div>
       </div>
@@ -44,28 +37,29 @@
 </template>
 
 <script>
+import CoolLightBox from 'vue-cool-lightbox'
 import SectionTitle from '../../../components/home/SectionTitle.vue'
 import galleries from '../../../galleryConfig.json'
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 
 export default {
   components: {
-    SectionTitle
+    SectionTitle,
+    CoolLightBox
+  },
+  data () {
+    return {
+      index: null,
+      parsed: null
+    }
   },
   computed: {
     singleGallery () {
       return galleries.find(gallery => gallery.id === this.$route.params.id)
     }
   },
-  methods: {
-    handleClick (id, filename) {
-      console.log(id, filename)
-      this.$router.push(`/gallery/${id}/${filename}`)
-    },
-    getPartOfGallery (part = 1) {
-      return this.singleGallery?.files.filter((el, index) => {
-        return (index + part) % 3 === 0
-      })
-    }
+  mounted () {
+    this.parsed = this.singleGallery.files.map(file => `/gallery/${this.singleGallery.id}/${file}`)
   }
 }
 </script>
