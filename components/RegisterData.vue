@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="contact__title">
-      Elladium Rafał Płaza, Elżbieta Płaza Spółka Cywilna
+      Elladium
     </div>
     <div>
       <div>
@@ -9,9 +9,9 @@
         ul. Kopaniny Lewe 24a
       </div>
       <p>40-748 Katowice</p>
-      <p>NIP: 954-280-50-70</p>
+      <p>NIP: 646-250-28-74</p>
       <small>Numer konta</small>
-      <p>ING Bank Śląski: 12 1050 1214 1000 0092 6751 7341</p>
+      <p>ING Bank Śląski: 33 1050 1634 1000 0091 4290 0340</p>
     </div>
   </div>
 </template>
